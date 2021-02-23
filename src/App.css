@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+
+.QR {
+  border: solid black 2px;
+  margin-left: 40%;
+  width: fit-content;
+  margin-top: 8vh;
+  border-radius: 10px;
+  border-width: 8px;
+  border-color: gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#head {
+  font-family: "Oi", cursive;
+  font-size: 60px;
+  font-weight: 10;
+  align-self: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 50px;
+  align-self: center;
+  color: dodgerblue;
 }
+.code {
+  margin-left: 20%;
+  margin-top: 8%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: fit-content;
+  height: 20%;
+}
+.qrc {
+  border: gray groove 2px;
+}
+.all {
+  margin-left: 25%;
+  margin-top: 10%;
+  background-color: white;
+  width: fit-content;
+  border-radius: 20px;
+}
+.ab {
+  background-image: ;
+  width: 30%;
+  border: groove black;
+  border-radius: 20px;
+  margin-left: 40%;
+  height: 70vh;
+}
+.tex {
+  width: fit-content;
+  background-color: white;
+  margin-left: 5%;
+  margin-top: 10%;
+  border: wheat;
+  border-radius: 10px;
+}
+.right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: black groove 2px;
+  float: right;
 }

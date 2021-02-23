@@ -2,9 +2,9 @@ import React from 'react'
 
 import './App.css';
 import QRCode from "qrcode.react";
-import {SliderPicker} from "react-color"
+import TextField from '@material-ui/core';
+import { TwitterPicker } from "react-color";
 import AppBar from '@material-ui/core/AppBar';
-import {TextField} from '@material-ui/core';
 
 
 
@@ -26,14 +26,14 @@ class App extends React.Component{
  }
 
 changeQrText(event) {
-   this.setState({
+   this.setState=({
      qrText:event.target.value
    })
 
   }
   render(){
     return(
-      <div >
+      <div>
                 <div className="container">
                   
                       <div className="partition">
@@ -46,38 +46,26 @@ changeQrText(event) {
 <div className='ab'>
                             <div className='code'>
 
-                                
+                                <TextField   label="Text for QR"
+            variant="outlined"
+            onChange={this.changeQrText}/>
                            
                                    <QRCode 
                                             value={this.state.qrText}
                                             fgColor={this.state.qrfgcolor}
                                             bgColor={this.state.qrbgcolor}
-                                            size={250}
+                                            
                                           
                                            
                                   />
-                                  <div className="tex">
-                                  <TextField   
-                                    label="Text for QR"
-                                    variant="outlined"
-                                    onChange={this.changeQrText}
-                                  />
-                              </div>
-            
-                              <img  src={"https://lukaszadam.com/assets/downloads/hero-illustration.svg"} />
                                  
                                   
-</div>
-
+                            </div>
                             
                                         
                        </div>      
                        </div>   
-                </div> 
-                <div className="right">
-  <SliderPicker />
-</div>
-                
+                </div>    
       </div>            
    
       
